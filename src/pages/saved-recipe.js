@@ -13,7 +13,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 export const SavedRecipe = () => {
   const [savedRecipes, setSavedRecipes] = useState([]);
   const userID = useGetUserID();
-  const [cookies, _] = useCookies(["access_token"]);
+  const [cookies,] = useCookies(["access_token"]);
   const [modalData, setModalData] = useState(null);
   const [open, setOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
